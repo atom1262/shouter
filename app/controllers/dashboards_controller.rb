@@ -1,9 +1,7 @@
 class DashboardsController < ApplicationController
 
   def show
-    @text_shout = TextShout.new
-    @shouts = current_user.shouts
-    @photo_shout = PhotoShout.new
+    @dashboard = Dashboard.new(current_user)
   end
 
 end
