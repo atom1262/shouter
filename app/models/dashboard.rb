@@ -8,7 +8,7 @@ class Dashboard
   end
 
   def new_photo_shout
-    TextShout.new
+    PhotoShout.new
   end
 
   def timeline
